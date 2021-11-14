@@ -1,0 +1,13 @@
+.login-form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.form-wrap{
+    margin: 10px 0px;
+}
+
+.form-wrap .btn{
+    width: 150px; 
+}
