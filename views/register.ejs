@@ -14,11 +14,18 @@
     <div class="container">
         <div class="login-form">
             <% if(messages.error) { %>
-                <%= messages.error %>
+                <div class="error-msgs alert alert-danger">                
+                        <%= messages.error %>                        
+                </div>
+            <% } %>
+            <% if(messages.success) { %>
+                <div class="success-msgs alert alert-success">                
+                        <%= messages.success %>                        
+                </div>
             <% } %>
             <h2>Register</h2>
             <form action="/register" method="post">
-                
+
                 <div class="form-wrap">
                     <label for="">Username</label>
                     <input type="text" class="form-control" name="name">
@@ -28,7 +35,7 @@
                     <input type="password" class="form-control" name="password">
                 </div>
                 <div class="form-wrap">
-                    <input type="submit" class="form-control btn btn-success" >
+                    <input type="submit" class="form-control btn btn-success">
                 </div>
             </form>
             <div class="re-page">
